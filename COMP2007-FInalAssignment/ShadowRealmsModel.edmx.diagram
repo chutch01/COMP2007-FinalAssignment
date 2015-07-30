@@ -12,12 +12,12 @@
         <EntityTypeShape EntityType="SRModel.SkillChart_General_Table" Width="1.5" PointX="3.75" PointY="20.875" IsExpanded="true" />
         <EntityTypeShape EntityType="SRModel.SkillChart_Magic_Table" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
         <EntityTypeShape EntityType="SRModel.SkillChart_PrestiegeClass_Race_Table" Width="1.5" PointX="3.75" PointY="17.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="SRModel.SkillChart_Stealth_Table" Width="1.5" PointX="0.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SRModel.SkillChart_Stealth_Table" Width="1.5" PointX="0.875" PointY="15.125" IsExpanded="true" />
         <EntityTypeShape EntityType="SRModel.SkillChart_Weapons_Table" Width="1.5" PointX="6.75" PointY="4.875" IsExpanded="true" />
         <EntityTypeShape EntityType="SRModel.SkillsPurchased_Faith_Table" Width="1.5" PointX="6" PointY="7.875" IsExpanded="true" />
         <EntityTypeShape EntityType="SRModel.SkillsPurchased_General_Table" Width="1.5" PointX="6" PointY="13.875" IsExpanded="true" />
         <EntityTypeShape EntityType="SRModel.SkillsPurchased_Magic_Table" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="SRModel.SkillsPurchased_Stealth_Table" Width="1.5" PointX="3" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SRModel.SkillsPurchased_Stealth_Table" Width="1.5" PointX="3.125" PointY="15" IsExpanded="true" />
         <EntityTypeShape EntityType="SRModel.SkillsPurchased_Weapon_Table" Width="1.5" PointX="9" PointY="10.875" IsExpanded="true" />
         <AssociationConnector Association="SRModel.FK_SkillsPurchased_Faith_Table_ToTable_1" ManuallyRouted="false" />
         <AssociationConnector Association="SRModel.FK_SkillsPurchased_General_Table_ToTable_1" ManuallyRouted="false" />

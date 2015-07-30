@@ -102,6 +102,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Frontend.Master" />
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
+    <Content Include="Player_Information\Default.aspx" />
+    <Content Include="Player_Information\Delete.aspx" />
+    <Content Include="Player_Information\Details.aspx" />
+    <Content Include="Player_Information\Edit.aspx" />
+    <Content Include="Player_Information\Insert.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.0.js" />
@@ -323,6 +328,41 @@
     </Compile>
     <Compile Include="Player_Information.cs">
       <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Player_Information\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Player_Information\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Player_Information\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Player_Information\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Player_Information\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Player_Information\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Player_Information\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Player_Information\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Player_Information\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Player_Information\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
     </Compile>
     <Compile Include="PresteigeClass_RaceList_Table.cs">
       <DependentUpon>ShadowRealmsModel.tt</DependentUpon>

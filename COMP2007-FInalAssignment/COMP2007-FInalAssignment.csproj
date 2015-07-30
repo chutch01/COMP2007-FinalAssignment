@@ -101,6 +101,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Frontend.Master" />
+    <None Include="Properties\PublishProfiles\shadowrealmsonlinelog.pubxml" />
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
     <Content Include="Player_Information\Default.aspx" />
     <Content Include="Player_Information\Delete.aspx" />

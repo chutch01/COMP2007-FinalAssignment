@@ -38,10 +38,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AspNet.FriendlyUrls">
       <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -78,6 +86,23 @@
     <Content Include="Scripts\jquery-1.9.0.min.map" />
     <Content Include="packages.config" />
     <Content Include="Site.Mobile.Master" />
+    <EntityDeploy Include="ShadowRealmsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ShadowRealmsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ShadowRealmsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ShadowRealmsModel.edmx</DependentUpon>
+      <LastGenOutput>ShadowRealmsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ShadowRealmsModel.edmx.diagram">
+      <DependentUpon>ShadowRealmsModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="ShadowRealmsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ShadowRealmsModel.edmx</DependentUpon>
+      <LastGenOutput>ShadowRealmsModel.cs</LastGenOutput>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -92,6 +117,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Character_Table.cs">
+      <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -109,13 +137,67 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Player_Information.cs">
+      <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PresteigeClass_RaceList_Table.cs">
+      <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShadowRealmsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShadowRealmsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShadowRealmsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShadowRealmsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShadowRealmsModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Faith_Table.cs">
+      <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_General_Table.cs">
+      <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Magic_Table.cs">
+      <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_PrestiegeClass_Race_Table.cs">
+      <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Stealth_Table.cs">
+      <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Weapons_Table.cs">
+      <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SkillsPurchased_Faith_Table.cs">
+      <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SkillsPurchased_General_Table.cs">
+      <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SkillsPurchased_Magic_Table.cs">
+      <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SkillsPurchased_Stealth_Table.cs">
+      <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SkillsPurchased_Weapon_Table.cs">
+      <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -128,6 +210,9 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -144,7 +229,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49411</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49411/</IISUrl>
+          <IISUrl>http://localhost:1025/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

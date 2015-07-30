@@ -2,9 +2,14 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
+    <!-- CSS Section-->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -18,3 +23,7 @@
     </form>
 </body>
 </html>
+
+<!-- Javascripts-->
+<script src="Scripts/jquery-1.9.0.min.js"></script>
+<script src="Scripts/bootstrap.min.js"></script>

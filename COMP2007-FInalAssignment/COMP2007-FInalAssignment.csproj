@@ -77,6 +77,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\OverrideStyles.css" />
     <Content Include="Default.aspx" />
     <Content Include="DynamicData\FieldTemplates\Boolean.ascx" />
     <Content Include="DynamicData\FieldTemplates\Boolean_Edit.ascx" />
@@ -100,7 +101,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Frontend.Master" />
+    <Content Include="MasterPages\Frontend.Master" />
     <None Include="Properties\PublishProfiles\shadowrealmsonlinelog.pubxml" />
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
     <Content Include="Player_Information\Default.aspx" />
@@ -171,6 +172,7 @@
     <Content Include="SkillChart_Weapons_Table\Details.aspx" />
     <Content Include="SkillChart_Weapons_Table\Edit.aspx" />
     <Content Include="SkillChart_Weapons_Table\Insert.aspx" />
+    <Content Include="UserPages\PrelogPage.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -347,11 +349,11 @@
     <Compile Include="DynamicData\FieldTemplates\Url_Edit.ascx.designer.cs">
       <DependentUpon>Url_Edit.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Frontend.Master.cs">
+    <Compile Include="MasterPages\Frontend.Master.cs">
       <DependentUpon>Frontend.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Frontend.Master.designer.cs">
+    <Compile Include="MasterPages\Frontend.Master.designer.cs">
       <DependentUpon>Frontend.Master</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
@@ -663,6 +665,13 @@
     </Compile>
     <Compile Include="SkillsPurchased_Weapon_Table.cs">
       <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\PrelogPage.aspx.cs">
+      <DependentUpon>PrelogPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\PrelogPage.aspx.designer.cs">
+      <DependentUpon>PrelogPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

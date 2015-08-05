@@ -101,6 +101,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Images\logo.jpg" />
     <Content Include="MasterPages\Frontend.Master" />
     <None Include="Properties\PublishProfiles\shadowrealmsonlinelog.pubxml" />
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />

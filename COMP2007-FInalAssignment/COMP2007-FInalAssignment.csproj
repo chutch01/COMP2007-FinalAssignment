@@ -141,6 +141,36 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="SkillChart_Faith_Table\Default.aspx" />
+    <Content Include="SkillChart_Faith_Table\Delete.aspx" />
+    <Content Include="SkillChart_Faith_Table\Details.aspx" />
+    <Content Include="SkillChart_Faith_Table\Edit.aspx" />
+    <Content Include="SkillChart_Faith_Table\Insert.aspx" />
+    <Content Include="SkillChart_General_Table\Default.aspx" />
+    <Content Include="SkillChart_General_Table\Delete.aspx" />
+    <Content Include="SkillChart_General_Table\Details.aspx" />
+    <Content Include="SkillChart_General_Table\Edit.aspx" />
+    <Content Include="SkillChart_General_Table\Insert.aspx" />
+    <Content Include="SkillChart_Magic_Table\Default.aspx" />
+    <Content Include="SkillChart_Magic_Table\Delete.aspx" />
+    <Content Include="SkillChart_Magic_Table\Details.aspx" />
+    <Content Include="SkillChart_Magic_Table\Edit.aspx" />
+    <Content Include="SkillChart_Magic_Table\Insert.aspx" />
+    <Content Include="SkillChart_PrestiegeClass_Race_Table\Default.aspx" />
+    <Content Include="SkillChart_PrestiegeClass_Race_Table\Delete.aspx" />
+    <Content Include="SkillChart_PrestiegeClass_Race_Table\Details.aspx" />
+    <Content Include="SkillChart_PrestiegeClass_Race_Table\Edit.aspx" />
+    <Content Include="SkillChart_PrestiegeClass_Race_Table\Insert.aspx" />
+    <Content Include="SkillChart_Stealth_Table\Default.aspx" />
+    <Content Include="SkillChart_Stealth_Table\Delete.aspx" />
+    <Content Include="SkillChart_Stealth_Table\Details.aspx" />
+    <Content Include="SkillChart_Stealth_Table\Edit.aspx" />
+    <Content Include="SkillChart_Stealth_Table\Insert.aspx" />
+    <Content Include="SkillChart_Weapons_Table\Default.aspx" />
+    <Content Include="SkillChart_Weapons_Table\Delete.aspx" />
+    <Content Include="SkillChart_Weapons_Table\Details.aspx" />
+    <Content Include="SkillChart_Weapons_Table\Edit.aspx" />
+    <Content Include="SkillChart_Weapons_Table\Insert.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -394,20 +424,230 @@
     <Compile Include="SkillChart_Faith_Table.cs">
       <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="SkillChart_Faith_Table\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Faith_Table\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Faith_Table\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Faith_Table\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Faith_Table\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Faith_Table\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Faith_Table\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Faith_Table\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Faith_Table\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Faith_Table\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SkillChart_General_Table.cs">
       <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_General_Table\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_General_Table\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_General_Table\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_General_Table\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_General_Table\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_General_Table\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_General_Table\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_General_Table\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_General_Table\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_General_Table\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
     </Compile>
     <Compile Include="SkillChart_Magic_Table.cs">
       <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="SkillChart_Magic_Table\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Magic_Table\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Magic_Table\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Magic_Table\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Magic_Table\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Magic_Table\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Magic_Table\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Magic_Table\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Magic_Table\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Magic_Table\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SkillChart_PrestiegeClass_Race_Table.cs">
       <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_PrestiegeClass_Race_Table\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_PrestiegeClass_Race_Table\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_PrestiegeClass_Race_Table\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_PrestiegeClass_Race_Table\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_PrestiegeClass_Race_Table\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_PrestiegeClass_Race_Table\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_PrestiegeClass_Race_Table\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_PrestiegeClass_Race_Table\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_PrestiegeClass_Race_Table\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_PrestiegeClass_Race_Table\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
     </Compile>
     <Compile Include="SkillChart_Stealth_Table.cs">
       <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="SkillChart_Stealth_Table\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Stealth_Table\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Stealth_Table\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Stealth_Table\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Stealth_Table\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Stealth_Table\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Stealth_Table\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Stealth_Table\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Stealth_Table\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Stealth_Table\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SkillChart_Weapons_Table.cs">
       <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Weapons_Table\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Weapons_Table\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Weapons_Table\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Weapons_Table\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Weapons_Table\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Weapons_Table\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Weapons_Table\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Weapons_Table\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillChart_Weapons_Table\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillChart_Weapons_Table\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
     </Compile>
     <Compile Include="SkillsPurchased_Faith_Table.cs">
       <DependentUpon>ShadowRealmsModel.tt</DependentUpon>

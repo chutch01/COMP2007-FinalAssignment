@@ -65,6 +65,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -104,24 +107,26 @@
     <Content Include="DynamicData\FieldTemplates\Url.ascx" />
     <Content Include="DynamicData\FieldTemplates\Url_Edit.ascx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="MasterPages\Frontend.Master" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Images\logo.jpg" />
-    <Content Include="MasterPages\Frontend.Master" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
     <None Include="Properties\PublishProfiles\shadowrealmsonlinelog.pubxml" />
-    <None Include="Scripts\jquery-1.9.0.intellisense.js" />
     <Content Include="Player_Information\Default.aspx" />
     <Content Include="Player_Information\Delete.aspx" />
     <Content Include="Player_Information\Details.aspx" />
     <Content Include="Player_Information\Edit.aspx" />
     <Content Include="Player_Information\Insert.aspx" />
+    <Content Include="packages.config" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\jquery-1.9.0.js" />
-    <Content Include="Scripts\jquery-1.9.0.min.js" />
-    <Content Include="Scripts\jquery-1.9.0.min.map" />
-    <Content Include="packages.config" />
+    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Site.Mobile.Master" />
     <EntityDeploy Include="ShadowRealmsModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -140,6 +145,7 @@
       <DependentUpon>ShadowRealmsModel.edmx</DependentUpon>
       <LastGenOutput>ShadowRealmsModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Scripts\jquery-2.1.4.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -179,7 +185,9 @@
     <Content Include="SkillChart_Weapons_Table\Details.aspx" />
     <Content Include="SkillChart_Weapons_Table\Edit.aspx" />
     <Content Include="SkillChart_Weapons_Table\Insert.aspx" />
+    <Content Include="UserPages\Login.aspx" />
     <Content Include="UserPages\PrelogPage.aspx" />
+    <Content Include="UserPages\Register.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -673,12 +681,26 @@
     <Compile Include="SkillsPurchased_Weapon_Table.cs">
       <DependentUpon>ShadowRealmsModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="UserPages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserPages\PrelogPage.aspx.cs">
       <DependentUpon>PrelogPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserPages\PrelogPage.aspx.designer.cs">
       <DependentUpon>PrelogPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
